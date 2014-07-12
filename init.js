@@ -34,7 +34,7 @@ Hooks.addMenuItem('Actions/Transmit/Send File With Active Connection', 'control-
   var osa = spawn('/usr/bin/osascript', [ '-e', script ]);      
 });
 
-Hooks.addMenuItem('Actions/Transmit/Send Document (DockSend)', 'control-shift-f', function() {
+Hooks.addMenuItem('Actions/Transmit/Send Document (DockSend)', 'cmd-shift-u', function() {
   var filePath = Document.current().path()
     , script = 'set filename to POSIX file "' + filePath + '"\n' +
                'ignoring application responses\n' +
